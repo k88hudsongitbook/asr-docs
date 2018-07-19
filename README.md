@@ -2,23 +2,7 @@
 
 This is some test documentation.
 
-## Activity Stream Router message format
-
-Field name | Type     | Required | Description | Example / Note
----        | ---      | ---      | ---         | ---
-`id`       | `string` | Yes | A unique identifier for the message that should not conflict with any other previous message | `ONBOARDING_1`
-`template` | `string` | Yes | An id matching an existing Activity Stream Router template | [See example](https://github.com/mozilla/activity-stream/blob/33669c67c2269078a6d3d6d324fb48175d98f634/system-addon/content-src/message-center/templates/SimpleSnippet.jsx)
-`publish_start` | `date` | No | When to start showing the message | `1524474850876`
-`publish_end` | `date` | No | When to stop showing the message | `1524474850876`
-`content` | `object` | Yes | An object containing all variables/props to be rendered in the template. Subset of allowed tags detailed below. | [See example below](#html-subset)
-`campaign` | `string` | No | Campaign id that the message belongs to | `RustWebAssembly`
-`targeting` | `string` `JEXL` | No | A [JEXL expression](http://normandy.readthedocs.io/en/latest/user/filter_expressions.html#jexl-basics) with all targeting information needed in order to decide if the message is shown | Not yet implemented, [Examples](#targeting-attributes)
-`trigger` | `string` | No | An event or condition upon which the message will be immediately shown. This can be combined with `targeting`. Messages that define a trigger will not be shown during non-trigger-based passive message rotation.
-`frequency` | `object` | No | A definition for frequency cap information for the message
-`frequency.lifetime` | `integer` | No | The maximum number of lifetime impressions for the message.
-`frequency.custom` | `array` | No | An array of frequency cap definition objects including `period`, a time period in milliseconds, and `cap`, a max number of impressions for that period.
-
-### Message example
+## Example `ASMessage`
 ```javascript
 {
   id: "ONBOARDING_1",
@@ -34,6 +18,47 @@ Field name | Type     | Required | Description | Example / Note
   }
 }
 ```
+
+## `ASMessage` fields
+
+### `id` *string*, *required*
+
+A unique identifier for the message that should not conflict with any other previous message.
+
+```json
+{
+   "id": "addsfsd3asf123123"
+}
+```
+
+### `template` *string*, *required*
+
+ An id matching an existing Activity Stream Router template. [See example](https://github.com/mozilla/activity-stream/blob/33669c67c2269078a6d3d6d324fb48175d98f634/system-addon/content-src/message-center/templates/SimpleSnippet.jsx)
+
+```json
+{
+   "template": "simple_snippet"
+}
+```
+
+
+## Other stuff
+
+Field name | Type     | Required | Description | Example / Note
+---        | ---      | ---      | ---         | ---
+`id`       | `string` | Yes | A unique identifier for the message that should not conflict with any other previous message | `ONBOARDING_1`
+`template` | `string` | Yes | An id matching an existing Activity Stream Router template | [See example](https://github.com/mozilla/activity-stream/blob/33669c67c2269078a6d3d6d324fb48175d98f634/system-addon/content-src/message-center/templates/SimpleSnippet.jsx)
+`publish_start` | `date` | No | When to start showing the message | `1524474850876`
+`publish_end` | `date` | No | When to stop showing the message | `1524474850876`
+`content` | `object` | Yes | An object containing all variables/props to be rendered in the template. Subset of allowed tags detailed below. | [See example below](#html-subset)
+`campaign` | `string` | No | Campaign id that the message belongs to | `RustWebAssembly`
+`targeting` | `string` `JEXL` | No | A [JEXL expression](http://normandy.readthedocs.io/en/latest/user/filter_expressions.html#jexl-basics) with all targeting information needed in order to decide if the message is shown | Not yet implemented, [Examples](#targeting-attributes)
+`trigger` | `string` | No | An event or condition upon which the message will be immediately shown. This can be combined with `targeting`. Messages that define a trigger will not be shown during non-trigger-based passive message rotation.
+`frequency` | `object` | No | A definition for frequency cap information for the message
+`frequency.lifetime` | `integer` | No | The maximum number of lifetime impressions for the message.
+`frequency.custom` | `array` | No | An array of frequency cap definition objects including `period`, a time period in milliseconds, and `cap`, a max number of impressions for that period.
+
+
 
 ### HTML subset
 The following tags are allowed in the content of the snippet: `i, b, u, strong, em, br`.
