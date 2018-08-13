@@ -40,28 +40,28 @@ Field name | Type     | Required
 `frequency.lifetime` | `integer` | No
 `frequency.custom` | `array` | No
 
-### id : string
+### id
 A unique identifier for the message that should not conflict with any other previous message.
 
 e.g. `ONBOARDING_1`
 
-### template : string
+### template
 An id matching an existing Activity Stream Router template
 
 [See example](https://github.com/mozilla/activity-stream/blob/33669c67c2269078a6d3d6d324fb48175d98f634/system-addon/content-src/message-center/templates/SimpleSnippet.jsx)
 
-### publish_start : Date
+### publish_start
 When to start showing the message
 
 e.g. `1524474850876`
 
-### content : TemplateContent
+### content
 An object containing all variables/props to be rendered in the template. Subset of allowed tags detailed below.
 
 [See example below](#html-subset)
 
 
-### bundled : integer
+### bundled
 The number of messages of the same template this one should be shown with.
 
 
@@ -94,23 +94,23 @@ The following 2 messages have a `bundled` property, indicating that they should 
 }
 ```
 
-### order : integer
+### order
 If bundled with other messages of the same template, which order should this one be placed in? Defaults to 0 if no order is desired
 
 [See example above](#a-bundled-message-example)
 
-### campaign : string
+### campaign
 Campaign id that the message belongs to.
 
 e.g. `RustWebAssembly`
 
-### targeting : string JEXL
+### targeting
 A [JEXL expression](http://normandy.readthedocs.io/en/latest/user/filter_expressions.html#jexl-basics) with all targeting information needed in order to decide if the message is shown | Not yet implemented, [Examples](#targeting-attributes)
 
-### trigger : string
+### trigger
 An event or condition upon which the message will be immediately shown. This can be combined with `targeting`. Messages that define a trigger will not be shown during non-trigger-based passive message rotation.
 
-### frequency : object
+### frequency
 A definition for frequency cap information for the message
 
 ```
