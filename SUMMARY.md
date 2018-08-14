@@ -7,7 +7,6 @@
   * [Roadmap](introduction/roadmap.md)
 * [Choosing a Template](templates/templates.md)
   * [New Tab Snippet](templates/snippets.md)
-    * [Simple Snippet](templates/snippets-simple.md)
   * [Onboarding Overlay](templates/onboarding.md)
   * [Doorhanger](templates/doorhanger.md)
 * [Creating Content](basics/basics.md)
