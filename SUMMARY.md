@@ -24,3 +24,6 @@
   * [Special behaviours](requests/special-behaviours.md)
   * [Telemetry](requests/telemetry.md)
   * [Templates](requests/templates.md)
+* [API Reference](api/api.md)
+  * [Template fields](api/template-fields.md)
+  * [Special actions](api/special-actions.md)
