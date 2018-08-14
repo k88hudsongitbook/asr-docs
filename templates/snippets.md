@@ -9,7 +9,7 @@ The snippets template shows up fixed to the bottom of the New Tab Page.
 The following fields are configurable via the `content` property of message definitions. For more comprehensive technical documentation
 
 * `title` : *string (plain text)* – A bold title displayed before the body `text`.
-* `text` : *string (rich text), required* – Main body text of snippet. This is a `RichText` field, meaning a subset of HTML (i, b, u, strong, em, br) and links (defined via the `links` property)  are allowed.
+* `text` : *string (rich text), required* – Main body text of snippet. This is a [`RichText` field](../api/template-fields.md#richtext-and-richlink).
 * `icon` : *string (url)* – Snippet icon. 64x64px. SVG or PNG preferred.
 * `button_label` : *string (plain text)* – Text for a button next to main snippet text that links to button_url. Requires `button_url` or `button_action`.
 * `button_url` : *string (url)* – A url for a button, if one exists.
