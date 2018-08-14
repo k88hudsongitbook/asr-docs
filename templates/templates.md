@@ -9,7 +9,5 @@ Here is an example of the "Simple Snippet Template", which shows up on the New T
 ## Available templates
 
 * [Snippets](snippets.md)
-  * [Simple Snippet](snippets-simple.md)
-  * [Newsletter](snippets-newsletter.md)
 * [Onboarding Overlay](onboarding.md)
 * [Doorhanger](doorhanger.md)
