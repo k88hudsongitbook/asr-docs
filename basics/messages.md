@@ -1,4 +1,4 @@
-## ASRouterMessage
+## Messages
 
 An `ASRouterMessage` is the smallest individual unit of content defined by any provider. An example of this would be an individual snippet, an individual pane in an onboarding display, or a particular CFR message.
 
