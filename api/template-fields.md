@@ -10,12 +10,7 @@ Template fields that are defined as `RichText` allow both a subset of HTML (i, b
     "text": "Hello! Visit <homepage>mozilla.org</homepage> and change some <aboutprefs>prefs</aboutprefs>!"
     "links": {
       "homepage": {"link_url": "https://mozilla.org"},
-      "aboutprefs": {
-        "link_action": {
-          type: "OPEN_ABOUT_PAGE",
-          data: {page: "preferences"
-        }
-      },
+      "aboutprefs": {"link_action": {"type": "OPEN_ABOUT_PAGE", "data": {"page": "preferences"}}},
     }
   }
 }
