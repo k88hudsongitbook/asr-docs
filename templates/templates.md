@@ -5,9 +5,3 @@ All messages in AS Router must be displayed via a **Template**, which is just a 
 Here is an example of the "Simple Snippet Template", which shows up on the New Tab Page / Home Page and allows for for a title, a body of text, and an icon, among other settings:
 
 ![Screenshot of the new tab page snippet](../assets/snippet-example.png)
-
-## Available templates
-
-* [Snippets](snippets.md)
-* [Onboarding Overlay](onboarding.md)
-* [Doorhanger](doorhanger.md)
