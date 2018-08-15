@@ -13,7 +13,7 @@ The following fields are configurable via the `content` property of message defi
 * `icon` : *string (url)* – Snippet icon. 64x64px. SVG or PNG preferred.
 * `button_label` : *string (plain text)* – Text for a button next to main snippet text that links to button_url. Requires `button_url` or `button_action`.
 * `button_url` : *string (url)* – A url for a button, if one exists.
-* `button_action` : *string* – An special action that the button triggers.
+* `button_action` : *object (SpecialAction)* – An special action that the button triggers. See [Special Action documentation](../api/special-actions.md) for more information.
 * `button_color` : *string (hex color)* – The text color of the button. It should be a valid CSS color including the leading `#`.
 * `button_background_color` : *string (hex color)* – The background color of the button. It should be a valid CSS color including the leading `#`.
 * `tall` : *boolean* – To be used by fundraising only, increases height to roughly 120px. Defaults to false.
