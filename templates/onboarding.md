@@ -2,7 +2,7 @@
 
 The onboarding template is a takeover of the new tab page and has space for three messages at once:
 
-![Screenshot of the onboarding](../assets/onboarding-example.png)
+![Screenshot of the onboarding overlay](../assets/onboarding-example.png)
 
 Note that for the onboarding template, **each message maps to a single panel, not the entire overlay**.
 

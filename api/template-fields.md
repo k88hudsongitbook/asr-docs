@@ -2,7 +2,13 @@
 
 ## RichText and RichLink
 
-Template fields that are defined as `RichText` allow both a subset of HTML (i, b, u, strong, em, br) as well custom links defined via a `links` property. Take a look at the following example, where the `text` field is a `RichText` type field:
+Template fields that are defined as `RichText` allow both a subset of HTML (i, b, u, strong, em, br) as well custom links defined via a `links` property.
+
+If a tag that is not on the allowed is used, the text content will be extracted and displayed.
+
+Grouping multiple allowed elements is not possible, only the first level will be used: `<u><b>text</b></u>` will be interpreted as `<u>text</u>`.
+
+Take a look at the following example, where the `text` field is a `RichText` type field:
 
 ```js
 {
