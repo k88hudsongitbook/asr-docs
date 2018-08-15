@@ -1,10 +1,10 @@
 ## Messages
 
-An `ASRouterMessage` is the smallest individual unit of content defined by any provider. An example of this would be an individual snippet, an individual pane in an onboarding display, or a particular CFR message.
+An "message", or `ASRouterMessage`, is the smallest individual unit of content defined by any provider. An example of this would be an individual snippet, an individual pane in an onboarding display, or a particular CFR message.
 
 ### Overview
 
-Should be JSON or javascript objects that are serializable to JSON. Here is an example:
+`ASRouterMessage`s should be JSON or javascript objects that are serializable to JSON. Here is an example:
 
 ```javascript
 {
