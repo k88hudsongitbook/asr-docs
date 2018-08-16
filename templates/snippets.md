@@ -23,6 +23,10 @@ To learn more about how to use and format special field types like `RichText` an
 * `tall` : *boolean* – To be used by fundraising only, increases height to roughly 120px. Defaults to false.
 * `links` : *object{[RichLink](../api/template-fields.md#richtext-and-richlink)}* – An object containing references to `RichLink`s for use in the `text` field.
 
+## User Interaction Telemetry
+
+The following user interactions are instrumented in this template, in addition to the [universally available telemetry](../data/telemetry.md):
+
 ### CLICK_BUTTON
 
 The user has clicked the button.

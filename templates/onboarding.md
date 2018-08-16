@@ -26,29 +26,12 @@ The following user interactions are instrumented in this template, in addition t
 
 ### CLICK_BUTTON
 
-The user has clicked the button.
+The user has clicked the button at the bottom of the panel
 
 ```js
 {
   "client_id": "n/a",
-  "action": "snippets_user_event",
-  "addon_version": "20180710100040",
-  "impression_id": "{005deed0-e3e4-4c02-a041-17405fd703f6}",
-  "locale": "en-US",
-  "source": "NEWTAB_FOOTER_BAR",
-  "message_id": "some_snippet_id",
-  "event": "CLICK_BUTTION"
-}
-```
-
-### BLOCK
-
-The user has closed the snippet via the top corner "x" button.
-
-```js
-{
-  "client_id": "n/a",
-  "action": "snippets_user_event",
+  "action": "onboarding_user_event",
   "addon_version": "20180710100040",
   "impression_id": "{005deed0-e3e4-4c02-a041-17405fd703f6}",
   "locale": "en-US",
