@@ -16,14 +16,13 @@
   * [Onboarding Overlay](templates/onboarding.md)
   <!-- * [Doorhanger](templates/doorhanger.md) -->
 * [Creating Content](basics/basics.md)
-  * [Messages](basics/messages.md)
   * [Providers](basics/providers.md)
+  * [Messages](basics/messages.md)
   * [Targeting](basics/targeting.md)
-  * [Special Functionality](basics/user-actions.md)
 * [Analyzing Data](data/data.md)
   * [Existing telemetry](data/telemetry.md)
-  * [Additional requirements](data/additional-requirements.md)
-  * [Running experiments](data/experiments.md)
+  <!-- * [Additional requirements](data/additional-requirements.md) -->
+  <!-- * [Running experiments](data/experiments.md) -->
 <!-- * [Requesting Features](requests/requests.md) -->
   <!-- * [New Providers](basics/creating-a-provider.md) -->
   <!-- * [Targeting](requests/targeting.md) -->
@@ -31,5 +30,5 @@
   <!-- * [Telemetry](requests/telemetry.md) -->
   <!-- * [Templates](requests/templates.md) -->
 * [API Reference](api/api.md)
-  * [Template fields](api/template-fields.md)
+  * [Template field types](api/template-fields.md)
   * [Special actions](api/special-actions.md)
