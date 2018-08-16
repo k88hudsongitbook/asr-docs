@@ -15,6 +15,7 @@ To learn more about how to use and format special field types like `RichText` an
 * `title` : *string [PlainText](../api/template-fields.md#plaintext)* – A bold title displayed before the body `text`.
 * `text` : *string [RichText](../api/template-fields.md#richtext-and-richlink), required* – Main body text of snippet.
 * `icon` : *string Url* – Snippet icon. 64x64px. SVG or PNG preferred.
+* `title_icon` : *string Url* – Small icon that shows up before the title / text. 16x16px. SVG or PNG preferred. Grayscale.
 * `button_label` : *string PlainText* – Text for a button next to main snippet text.
 * `button_url` : *string Url* – A url for the button to link to.
 * `button_action` : *object [SpecialAction](../api/special-actions.md)* – An special action that the button triggers.
