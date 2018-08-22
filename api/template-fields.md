@@ -16,7 +16,7 @@ Take a look at the following example, where the `text` field is a `RichText` typ
     "text": "Hello! Visit <homepage>mozilla.org</homepage> and change some <aboutprefs>prefs</aboutprefs>!"
     "links": {
       "homepage": {
-        "link_url": "https://mozilla.org",
+        "url": "https://mozilla.org",
         "metric": "homepage_click"
       },
       "aboutprefs": {
