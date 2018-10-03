@@ -13,6 +13,7 @@
   <!-- * [Building an integration](guides/integrations.md) -->
 * [Templates](templates/templates.md)
   * [New Tab Snippet](templates/snippets.md)
+    * [Simple](templates/snippets-simple.md)
   * [Onboarding Overlay](templates/onboarding.md)
   <!-- * [Doorhanger](templates/doorhanger.md) -->
 * [Creating Content](basics/basics.md)
